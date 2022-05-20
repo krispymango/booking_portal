@@ -1,0 +1,814 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root
+{
+  --MainBackgroundColor:#ffffff;
+  --MainTextColor:#000000;
+  --FormContainerBackgroundColor:#5DADE2;
+  --SubmitButtonBgColor:#38EA2C;
+  --HeaderBgColor:#3498DB;
+  --HeaderBorderBottomColor:#2E86C1;
+}
+
+body
+{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  background: var(--MainBackgroundColor);
+  color: var(--MainTextColor);
+  font-family: 'Abel', sans-serif;
+}
+
+
+
+/*Main Body Styling*/
+.main_body
+{
+  position:relative;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+/*Main Body Styling*/
+
+
+
+/*Form Container Styling*/
+.form_container
+{
+  margin: 0px auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap:10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/*Form Container Styling*/
+
+
+
+/*Login Form Styling*/
+.login_form
+{
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.password_wrapper
+{
+  display: flex;
+  width: 100%;
+}
+
+.sign_or_signup_btn
+{
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.password_wrapper input[type='password'],
+.password_wrapper input[type='email'],
+.password_wrapper input[type='text']
+{
+  flex:9;
+  background: #F2F3F4;
+}
+
+.password_wrapper span
+{
+  flex:1;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 5vh;
+  border: 1px solid #A6ACAF;
+  border-radius: 4px;
+}
+
+.password_wrapper span:hover
+{
+  background: #A6ACAF;
+  color: white;
+  cursor: pointer;
+}
+
+.password_wrapper .span
+{
+  flex:1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.login_form input[type='email'],
+.login_form input[type='password'],
+.login_form input[type='text']
+{
+  height: 5vh;
+  width: 100%;
+  border: 1px solid #E5E7E9;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+}
+
+.login_form h2
+{
+  text-align: center;
+}
+
+.login_form h4
+{
+  margin-top: 10px;
+}
+
+.login_form input[type='submit']
+{
+  display: block;
+  margin: 0px auto;
+  margin-top: 10px;
+  height: 6vh;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  background: var(--SubmitButtonBgColor);
+  font-family: 'Abel', sans-serif;
+  font-size: 17px;
+  color: white;
+}
+/*Login Form Styling*/
+
+
+
+/*Signup Form Styling*/
+.signup_form
+{
+  display: none;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.signup_form_two
+{
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.password_wrapper
+{
+  display: flex;
+  width: 100%;
+}
+
+.signup_form input[type='email'],
+.signup_form input[type='password'],
+.signup_form input[type='text'],
+.signup_form input[type='number'],
+.signup_form input[type='tel']
+{
+  border: 1px solid #E5E7E9;
+  border-radius: 5px;
+  height: 5vh;
+  width: 100%;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+}
+
+.signup_form_two input[type='email'],
+.signup_form_two input[type='password'],
+.signup_form_two input[type='text'],
+.signup_form_two input[type='number'],
+.signup_form_two input[type='tel'],
+.signup_form_two input[type='date'],
+.signup_form_two input[type='time'],
+.signup_form_two select
+{
+  border: 1px solid #E5E7E9;
+  border-radius: 5px;
+  height: 5vh;
+  width: 100%;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+  background: #F2F3F4;
+}
+
+.signup_form h2
+{
+  text-align: center;
+}
+
+.signup_form h4
+{
+  margin-top: 10px;
+}
+
+.signup_form input[type='submit'],
+.signup_form_two input[type='submit']
+{
+  display: block;
+  margin: 0px auto;
+  margin-top: 10px;
+  height: 6vh;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  background: var(--SubmitButtonBgColor);
+  font-family: 'Abel', sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+.form_display
+{
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  background: var(--FormContainerBackgroundColor);
+}
+
+.form_display h1
+{
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+/*Signup Form Styling*/
+
+
+.header
+{
+  height: 8vh;
+  background: var(--HeaderBgColor);
+  border-bottom: 1px solid var(--HeaderBorderBottomColor);
+}
+
+.header_grid
+{
+  margin: 0px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  line-height: 8vh;
+}
+
+.header_grid div:nth-child(1)
+{
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.header_grid div:nth-child(2)
+{
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+
+}
+
+.header_grid div:nth-child(2) a
+{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.header_grid div:nth-child(2) a span:hover
+{
+  color: red;
+}
+
+.dashboard_pane
+{
+  display: flex;
+  height: calc(100vh - 8vh - 1px);
+}
+
+.left_pane
+{
+  flex: 0.5;
+  background: #2471A3;
+}
+
+.left_pane a
+{
+  text-decoration: none;
+  color: black;
+}
+
+
+.left_pane ul
+{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.left_pane ul li
+{
+  position: relative;
+  padding: 20px 0px;
+  text-align: center;
+  border-bottom: 1px solid #1A5276;
+  transition: 0.2s
+}
+
+.left_pane ul li:hover
+{
+  cursor: pointer;
+  background: #5DADE2;
+  transition: 0.2s;
+}
+
+.left_pane ul li:hover .fas
+{
+  transform: scale(1.4);
+}
+
+.navigation_popup
+{
+  display: none;
+  padding: 5px;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  right: -80px;
+  top:0px;
+  background: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.left_pane ul li:hover .navigation_popup
+{
+  display: block;
+}
+.navigation_popup::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -14px;
+  margin-right: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  transform: rotate(90deg);
+
+}
+
+.left_pane .fas
+{
+  color: white;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.right_pane
+{
+  flex: 9.5;
+  background: #F4F6F6;
+  position: relative;
+}
+
+.right_pane_heading
+{
+  margin: 0px auto;
+  width: 80%;
+  height: 10vh;
+  line-height: 10vh;
+  border-bottom: 1px solid #E5E7E9;
+}
+
+.right_pane_heading h1 span
+{
+  font-size: 17px;
+  color: #909497;
+}
+
+.right_pane_body
+{
+  margin: 0px auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-top: 2vh;
+  width: 80%;
+  background: white;
+  height: 65vh;
+}
+
+.booking_calendar_container
+{
+  margin: 0px auto;
+  width: 50%;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #E5E7E9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.calendar_date
+{
+  border-top: 2px solid #E5E7E9;
+}
+
+.calendar_month
+{
+  font-weight: bold;
+  color: blue;
+}
+
+.booking_wrapper
+{
+  width: 100%;
+  height: 48vh;
+}
+
+
+.booking_container
+{
+  margin: 0px auto;
+  margin-top: 1vh;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid #E5E7E9;
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.booking_container_two
+{
+  margin: 0px auto;
+  margin-top: 1vh;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid #E5E7E9;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  height: 8vh;
+}
+
+.booking_container:hover
+{
+  transform: scale(1.01);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.booking_container_two:hover
+{
+  transform: scale(1.01);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.booking_details_info
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+.booking_details_info .fas
+{
+  color: #909497;
+}
+
+.booking_details_info_two
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.booking_details_info_two .fas
+{
+  color: #909497;
+}
+
+
+.booking_action_btn
+{
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  background: red;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.booking_action_btn a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.booking_date
+{
+  flex:2;
+}
+
+.booking_details
+{
+  flex: 6;
+}
+
+.booking_status
+{
+  flex:2;
+  position:relative;
+}
+
+.search_filter_form
+{
+  margin: 0px auto;
+  margin-bottom: 1vh;
+  padding: 0px;
+  width: 95%;
+  height: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 10px;
+}
+
+.search_filter_form input[type='date'],
+.search_filter_form select
+{
+  border: 1px solid #E5E7E9;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 17px;
+}
+
+.create_event
+{
+  margin: 0px auto;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  width: 90%;
+}
+
+.create_event a
+{
+  text-decoration: none;
+  color: white;
+  height: 5vh;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  background: var(--SubmitButtonBgColor);
+}
+
+.table_container
+{
+  margin: 0px auto;
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #E5E7E9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.table_container table
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_container table thead
+{
+  height: 7vh;
+  font-size: 17px;
+}
+
+.table_container table thead th:nth-child(1)
+{
+  width: 1%;
+}
+
+.table_container table tbody
+{
+  text-align: center;
+}
+
+.table_container table tbody tr
+{
+  height: 4vh;
+}
+
+.table_container table tbody tr:nth-child(even)
+{
+  background: #F2F3F4;
+}
+
+.table_container .fa-edit,
+.table_container .fa-user-edit
+{
+  color: #5DADE2;
+  cursor: pointer;
+}
+
+.table_container .fa-trash-alt,
+.table_container .fa-user-times
+{
+  color: #E74C3C;
+  cursor: pointer;
+}
+
+
+
+
+.dashboard_grid
+{
+  display: grid;
+  margin: 0px auto;
+  width: 95%;
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap:20px;
+  max-height: 65vh;
+}
+
+.dashboard_clock
+{
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.dashboard_clock h1
+{
+  text-align: center;
+}
+
+.dashboard_clock h1 span
+{
+  font-size: 17px;
+  color: #909497;
+}
+
+
+
+.dashboard_right_grid
+{
+  width: 95%;
+  padding-bottom: 10px;
+  max-height: 60vh;
+  padding-bottom: 10px;
+}
+
+
+.dashboard_left_grid
+{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  max-height: 60vh;
+}
+
+.recently_booked_heading
+{
+  height: 5vh;
+  color: #909497;
+  text-align: center;
+  border-bottom: 1px solid #E5E7E9;
+}
+
+.event_calendar
+{
+  max-height: 55vh;
+  overflow-y: scroll;
+}
+
+
+#error_message
+{
+  display: none;
+  z-index: 100;
+  background: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:30px;
+  left: 0px;
+  right: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px auto;
+  border: 1px solid #E5E7E9;
+  width: 20%;
+}
+
+#error_message .success_msg
+{
+  text-align: center;
+  color: green;
+}
+
+#error_message .error_msg
+{
+  color: red;
+  text-align: center;
+}
+
+
+
+.pagination_wrapper
+{
+  position:relative;
+  margin: 0px auto;
+  width: 90%;
+}
+
+.pagination
+{
+  position: absolute;
+  right: 10px;
+  list-style: none;
+  margin: 0px;
+  margin-top: 2vh;
+  padding:10px;
+}
+
+.pagination li
+{
+  margin: 2px;
+  padding: 5px 5px;
+  display: inline;
+  background: #3498DB;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination li a
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+.manage_event_wrapper
+{
+  margin: 0px auto;
+  margin-top: 5vh;
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid #E5E7E9;
+  text-decoration: none;
+  color: black;
+  height: 5vh;
+  background: white;
+}
+
+
+/*Footer Styling*/
+.footer
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 5vh;
+  line-height: 5vh;
+  background: #1B4F72;
+  color: white;
+  text-align: center;
+}
+/*Footer Styling*/
+
+
+/*Mobile Styling*/
+@media (max-width:420px)
+{
+
+}
+/*Mobile Styling*/
